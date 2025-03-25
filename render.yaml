@@ -3,7 +3,7 @@ services:
     name: appsmith
     env: docker
     plan: free
-    image: http://index.docker.io/appsmith/appsmith-ce
+    image: https://hub.docker.com/r/appsmith/appsmith-cee
     autoDeploy: true
     disk:
       name: appsmith-data
