@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: appsmith
+    env: docker
+    plan: free
+    branch: release
+    repo: https://github.com/bankwirat/appsmith
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+
