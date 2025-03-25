@@ -3,8 +3,8 @@ services:
     name: appsmith
     env: docker
     plan: free
-    branch: release
     repo: https://github.com/bankwirat/appsmith
-    dockerfilePath: ./Dockerfile.release
+    branch: release
+    dockerfilePath: ./deploy/docker/Dockerfile
     autoDeploy: true
 
