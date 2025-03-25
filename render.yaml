@@ -3,8 +3,8 @@ services:
     name: appsmith
     env: docker
     plan: free
-    image: appsmith/appsmith-ce
-    autoDeploy: false
+    image: http://index.docker.io/appsmith/appsmith-ce
+    autoDeploy: true
     disk:
       name: appsmith-data
       mountPath: /appsmith-stacks
