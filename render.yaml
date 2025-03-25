@@ -5,6 +5,6 @@ services:
     plan: free
     branch: release
     repo: https://github.com/bankwirat/appsmith
-    dockerfilePath: ./Dockerfile
+    dockerfilePath: ./Dockerfile.release
     autoDeploy: true
 
