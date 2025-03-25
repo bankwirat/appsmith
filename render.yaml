@@ -5,11 +5,11 @@ services:
     plan: free
     image:
       url: appsmith/appsmith-ce
-    autoDeploy: true
-    disk:
-      name: appsmith-data
-      mountPath: /appsmith-stacks
-      sizeGB: 1
+    autoDeploy: false
+    #disk:
+    #  name: appsmith-data
+    #  mountPath: /appsmith-stacks
+    #  sizeGB: 1
     envVars:
       - key: APPSMITH_MAIL_ENABLED
         value: "false"
