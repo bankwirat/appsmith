@@ -3,16 +3,12 @@ services:
     name: appsmith
     env: docker
     plan: free
+    image: appsmith/appsmith-ee
     autoDeploy: false
-
-    build:
-      image: appsmith/appsmith-ee
-
     disk:
       name: appsmith-data
       mountPath: /appsmith-stacks
       sizeGB: 1
-
     envVars:
       - key: APPSMITH_MAIL_ENABLED
         value: "false"
@@ -21,4 +17,5 @@ services:
       - key: APPSMITH_DISABLE_TELEMETRY
         value: "false"
       - key: APPSMITH_CUSTOM_DOMAIN
-        value: "" # ถ้ามี domain ใส่ตรงนี้
+        value: "" # ใส่โดเมนของคุณที่นี่หากมี
+
