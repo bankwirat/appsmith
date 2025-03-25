@@ -1,10 +1,10 @@
 services:
   - type: web
     name: appsmith
-    env: docker
+    runtime: image
     plan: free
-    dockerImage:
-      image: appsmith/appsmith-ce
+    image:
+      url: appsmith/appsmith-ce
     autoDeploy: true
     disk:
       name: appsmith-data
