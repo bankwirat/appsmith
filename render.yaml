@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: appsmith
-    env: docker
-    plan: free
-    image: appsmith/appsmith-ce
-    autoDeploy: false
-
